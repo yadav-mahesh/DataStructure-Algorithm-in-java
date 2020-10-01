@@ -8,7 +8,8 @@ public class Pattern1 {
 	public static void main(String[] args) {
 		Scanner a = new Scanner(System.in);
 		int n = a.nextInt();
-		int i=1,j;
+		int i=1;
+		int j;
 		while(i<=n) {
 			j=1;
 			while(j<=i) {
