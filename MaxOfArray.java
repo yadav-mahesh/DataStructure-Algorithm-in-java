@@ -8,19 +8,14 @@ public class MaxOfArray {
 	public static void main(String[] args) {
 
 		int[] arr = takeinput();
-		System.out.println(max(arr, 0));
+		System.out.println(maxByRec(arr, 0));
 	}
 
-	public static int max(int[] arr, int vidx) {
-
-		if (vidx == arr.length)
-			return Integer.MIN_VALUE;
-
-		int prev = max(arr, vidx + 1);
-		if (arr[vidx] > prev)
-			return arr[vidx];
-		else
-			return prev;
+	public static int maxByRec(int[] arr, int vidx) {
+		if (vidx == arr.length) return Integer.MIN_VALUE;
+		int rightSide = maxByRec(arr, vidx + 1);
+		if (arr[vidx] > rightSide) return arr[vidx];
+		else return prev;
 	}
 
 	public static int[] takeinput() {
