@@ -18,15 +18,15 @@ public class MatrixMultiplication {
 			int[][] a = takeinput(r1, c1);
 			int[][] b = takeinput(r2, c2);
 
-			int[][] c = multiply(a, b);
+			int[][] c = MultiplyMatrices(a, b);
 			display(c);
 		}
 
 	}
 
-	public static int[][] multiply(int[][] a, int[][] b) {
+	public static int[][] MultiplyMatrices(int[][] a, int[][] b) {
 
-		int[][] c = new int[ a.length][b[0].length];
+		int[][] c = new int[a.length][b[0].length];
 		int sum = 0;
 		for (int i = 0; i < a.length; i++) {
 
@@ -44,9 +44,11 @@ public class MatrixMultiplication {
 
 	public static void display(int[][] arr) {
 		for (int row = 0; row < arr.length; row++) {
-			for (int col = 0; col < arr[0].length; col++) {
-				System.out.print(arr[row][col] + "  ");
-			}
+			System.out.print("[  ");
+			for (int col = 0; col < arr[0].length-1; col++) {
+				System.out.print(arr[row][col] + ",  ");
+			} 
+			System.out.print(arr[row][arr[0].length-1] + "] ");
 			System.out.println();
 		}
 	}
