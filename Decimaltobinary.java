@@ -1,5 +1,4 @@
-package lecture2;
-
+// Decimal To Binary Code
 import java.util.Scanner;
 
 public class Decimaltobinary {
