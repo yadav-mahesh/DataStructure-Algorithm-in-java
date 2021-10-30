@@ -1,5 +1,4 @@
-//Bubble Sort
-package lecture4;
+//Bubble Sort Code
 
 import java.util.Scanner;
 
