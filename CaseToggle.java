@@ -1,9 +1,4 @@
-/*
- * @author Vishesh Jain
- * @date   27-Feb-2019
- */
-package lecture6;
-
+// CaseToggle Code
 import java.util.Scanner;
 
 public class CaseToggle {
